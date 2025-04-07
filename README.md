@@ -1,2 +1,3 @@
-# pixel-quest-upstream
-An Upstream of the core functionality for Pixel-Quest.
+# Pixel Quest - Pantheon Upstream
+
+This repository serves as the core upstream for all Pixel Quest related sites.

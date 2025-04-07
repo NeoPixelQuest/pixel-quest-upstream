@@ -1,0 +1,7 @@
+enabled_entity_types:
+  node: {  }
+  media: {  }
+auto_purge:
+  enabled: true
+  after: '30 days'
+compact_overview: false

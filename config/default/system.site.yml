@@ -1,0 +1,12 @@
+langcode: en
+name: 'Default Site Name'
+mail: test@test.com
+slogan: ''
+page:
+  403: ''
+  404: /search404
+  front: /user/login
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

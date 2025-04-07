@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: media_default
+label: 'Media Default'
+effects:
+  4809f33a-9e57-4a04-986c-557d77e8b5a1:
+    uuid: 4809f33a-9e57-4a04-986c-557d77e8b5a1
+    id: image_scale
+    weight: 1
+    data:
+      width: 600
+      height: null
+      upscale: false

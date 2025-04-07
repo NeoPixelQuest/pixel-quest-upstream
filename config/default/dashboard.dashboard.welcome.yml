@@ -1,0 +1,54 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.content_recent
+  module:
+    - announcements_feed
+    - layout_builder
+    - layout_discovery
+    - views
+id: welcome
+label: Welcome
+description: ''
+layout:
+  -
+    layout_id: layout_twocol_section
+    layout_settings:
+      label: ''
+      context_mapping: {  }
+      column_widths: 75-25
+    components:
+      4e43d7bd-2c15-47b8-a484-017468e31526:
+        uuid: 4e43d7bd-2c15-47b8-a484-017468e31526
+        region: first
+        configuration:
+          id: 'views_block:content_recent-block_1'
+          label: ''
+          label_display: visible
+          provider: views
+          context_mapping: {  }
+          views_label: ''
+          items_per_page: none
+        weight: 0
+        additional: {  }
+    third_party_settings: {  }
+  -
+    layout_id: layout_onecol
+    layout_settings:
+      label: ''
+      context_mapping: {  }
+    components:
+      8b891fc1-77d2-4c07-9374-5671f95aa6b1:
+        uuid: 8b891fc1-77d2-4c07-9374-5671f95aa6b1
+        region: content
+        configuration:
+          id: announce_block
+          label: Announcements
+          label_display: visible
+          provider: announcements_feed
+          context_mapping: {  }
+        weight: 0
+        additional: {  }
+    third_party_settings: {  }
+weight: 0

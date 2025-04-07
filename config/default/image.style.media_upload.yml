@@ -1,0 +1,14 @@
+langcode: en
+status: true
+dependencies: {  }
+name: media_upload
+label: 'Media Upload'
+effects:
+  8a3e0176-e669-4244-a6b8-441e164e2fd0:
+    uuid: 8a3e0176-e669-4244-a6b8-441e164e2fd0
+    id: image_scale
+    weight: 1
+    data:
+      width: 450
+      height: null
+      upscale: false
