@@ -1,8 +1,8 @@
 {
-    "name": "pixel-quest/core",
-    "description": "Core Pantheon Upstream for Drupal websites.",
-    "type": "pantheon-upstream",
-    "license": "GPL-2.0-or-later",
+    "name": "pixel-quest-upstream/drupal-composer-managed",
+    "description": "Install Drupal 11 with Composer on Pantheon.",
+    "type": "project",
+    "license": "MIT",
     "repositories": [
         {
             "type": "composer",
@@ -18,47 +18,29 @@
         }
     ],
     "require": {
-        "composer/installers": "^2.3",
+        "composer/installers": "^1.9",
         "cweagans/composer-patches": "^1.7",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-recommended": "^11",
         "drush/drush": "^13",
-        "pantheon-systems/drupal-integrations": "^11.1",
-        "pantheon-systems/upstream-management": "^1.0",
+        "pantheon-systems/drupal-integrations": "^11",
+        "pantheon-systems/upstream-management": "^1",
         "pantheon-upstreams/upstream-configuration": "dev-main",
         "pixelquest/pq_legos": "^1",
         "pixelquest/pq_starter": "^1"
     },
     "require-dev": {
-        "drupal/core-dev": "^11",
-        "kevinquillen/recipe-generator": "^2.0"
+        "drupal/core-dev": "^11"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
-            "drupal/core-composer-scaffold": true,
-            "pantheon-systems/upstream-management": true,
-            "php-http/discovery": true,
-            "phpstan/extension-installer": true,
-            "tbachert/spi": true
-        },
-        "sort-packages": true,
-        "preferred-install": "dist",
-        "platform": {
-            "php": "8.3"
-        }
-    },
     "extra": {
         "drupal-scaffold": {
             "locations": {
-                "web-root": "web/"
+                "web-root": "./web"
             },
             "allowed-packages": ["pantheon-systems/drupal-integrations"],
             "file-mapping": {
@@ -97,14 +79,30 @@
             "drupal/gin": {
                 "Remove Status Template File": "patches/gin-theme-remove-status-template.patch"
             }
+        }
+    },
+    "autoload": {
+        "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
+    },
+    "scripts": {
+        "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
+        "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate"]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "platform": {
+            "php": "8.3"
         },
-        "autoload": {
-            "classmap": ["upstream-configuration/scripts/ComposerScripts.php"]
-        },
-        "scripts": {
-            "pre-update-cmd": ["DrupalComposerManaged\\ComposerScripts::preUpdate"],
-            "post-update-cmd": ["DrupalComposerManaged\\ComposerScripts::postUpdate"],
-            "upstream-require": ["DrupalComposerManaged\\ComposerScripts::upstreamRequire"]
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "phpstan/extension-installer": true,
+            "php-http/discovery": true,
+            "tbachert/spi": true,
+            "pantheon-systems/upstream-management": true
         }
     }
 }

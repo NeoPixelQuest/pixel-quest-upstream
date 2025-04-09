@@ -207,7 +207,7 @@ class ComposerScripts {
       '8.3' => '8.3.14',
       '8.2' => '8.2.26',
       '8.1' => '8.1.31',
-      // EOL final patch version below this line.
+    // EOL final patch version below this line.
       '8.0' => '8.0.30',
       '7.4' => '7.4.33',
       '7.3' => '7.3.33',

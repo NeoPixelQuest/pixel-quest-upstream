@@ -1,35 +1,30 @@
 {
-    "name": "pantheon-upstreams/upstream-configuration",
-    "type": "project",
-    "version": "dev-main",
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-    ],
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require": {
-        "pixelquest/pixel-pantheon-core": "^1.1",
-        "drupal/core-recommended": "^11"
+  "name": "pantheon-upstreams/upstream-configuration",
+  "type": "project",
+  "version": "dev-main",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
     },
-    "config": {
-        "allow-plugins": {
-            "composer/installers": true,
-            "cweagans/composer-patches": true
-        },
-        "sort-packages": true
-    },
-    "extra": {
-        "enable-patching": true,
-        "composer-exit-on-patch-failure": true,
-        "patchLevel": {
-            "drupal/core": "-p2"
-        }
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
     }
+  ],
+  "require": {
+    "pixelquest/pixel-pantheon-core": "^1",
+    "drupal/core-recommended": "^11"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "_README": "To make a custom upstream, clone this repository and add any dependencies to be provided by this upstream to this composer.json file. Leave the root-level composer.json file for the exclusive use of each individual site; do not modify it after your custom upstream has been published. See https://pantheon.io/docs/create-custom-upstream for more information.",
+    "enable-patching": true,
+    "composer-exit-on-patch-failure": false,
+    "patchLevel": {
+      "drupal/core": "-p2"
+    },
+    "patches": []
+  }
 }

@@ -34,7 +34,6 @@ else {
   $config["config_split.config_split.local"]['status'] = true;
 }
 
-
 $settings['state_cache'] = TRUE;
 
 // Add the following command to enable use of the sendmail functionality.

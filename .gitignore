@@ -124,5 +124,3 @@ web/libraries/rtseo.js/
 .ddev/addon-metadata/
 .ddev/solr/
 /web/sites/default/settings.ddev.php
-
-auth.json
