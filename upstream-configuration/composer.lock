@@ -781,17 +781,17 @@
         },
         {
             "name": "drupal/bpmn_io",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/bpmn_io.git",
-                "reference": "2.0.7"
+                "reference": "2.0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/bpmn_io-2.0.7.zip",
-                "reference": "2.0.7",
-                "shasum": "88cc7f6999276df2ce84188068f3bb684cc6663a"
+                "url": "https://ftp.drupal.org/files/projects/bpmn_io-2.0.8.zip",
+                "reference": "2.0.8",
+                "shasum": "3fe8734f2a9570fcfdbe47167eafa1e3402f7c03"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -802,8 +802,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.7",
-                    "datestamp": "1739260139",
+                    "version": "2.0.8",
+                    "datestamp": "1744192017",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1996,17 +1996,17 @@
         },
         {
             "name": "drupal/eca",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/eca.git",
-                "reference": "2.1.6"
+                "reference": "2.1.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/eca-2.1.6.zip",
-                "reference": "2.1.6",
-                "shasum": "fa73d915bff966d2e27c5255de32b6bef13beff8"
+                "url": "https://ftp.drupal.org/files/projects/eca-2.1.7.zip",
+                "reference": "2.1.7",
+                "shasum": "8a9c6d2c02952c1c92f2189d3665fc11d49eca43"
             },
             "require": {
                 "dragonmantank/cron-expression": "^3.1",
@@ -2028,8 +2028,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.6",
-                    "datestamp": "1741965579",
+                    "version": "2.1.7",
+                    "datestamp": "1744222322",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2063,7 +2063,7 @@
         },
         {
             "name": "drupal/eca_modeller_bpmn",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "require": {
                 "drupal/core": "^10.3 || ^11",
                 "drupal/eca": "^2",
@@ -2072,8 +2072,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "2.1.6",
-                    "datestamp": "1741965579",
+                    "version": "2.1.7",
+                    "datestamp": "1744222322",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2106,7 +2106,7 @@
         },
         {
             "name": "drupal/eca_ui",
-            "version": "2.1.6",
+            "version": "2.1.7",
             "require": {
                 "drupal/core": "^10.3 || ^11",
                 "drupal/eca": "*"
@@ -2114,8 +2114,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "2.1.6",
-                    "datestamp": "1741965579",
+                    "version": "2.1.7",
+                    "datestamp": "1744222322",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2184,11 +2184,11 @@
             ],
             "authors": [
                 {
-                    "name": "DuaelFr",
+                    "name": "duaelfr",
                     "homepage": "https://www.drupal.org/user/931394"
                 },
                 {
-                    "name": "VladimirAus",
+                    "name": "vladimiraus",
                     "homepage": "https://www.drupal.org/user/673120"
                 }
             ],
@@ -2706,10 +2706,10 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin_lb.git",
-                "reference": "eda3f9ec082ef5c7c4014c1a26d99d56043d405e"
+                "reference": "b29f692b7f881520c5ea417e62cdcf5ecf64aa21"
             },
             "require": {
-                "drupal/core": "^10.1 || ^11",
+                "drupal/core": "^10.3 || ^11",
                 "drupal/gin": "^4.0",
                 "drupal/gin_toolbar": "^2.0"
             },
@@ -2727,7 +2727,7 @@
                 },
                 "drupal": {
                     "version": "2.0.x-dev",
-                    "datestamp": "1743259126",
+                    "datestamp": "1745012167",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3945,17 +3945,17 @@
         },
         {
             "name": "drupal/moderated_content_bulk_publish",
-            "version": "2.0.34",
+            "version": "2.0.35",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/moderated_content_bulk_publish.git",
-                "reference": "2.0.34"
+                "reference": "2.0.35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.34.zip",
-                "reference": "2.0.34",
-                "shasum": "3d3a15530acdeb216f38b16f30d99aadc30dfabb"
+                "url": "https://ftp.drupal.org/files/projects/moderated_content_bulk_publish-2.0.35.zip",
+                "reference": "2.0.35",
+                "shasum": "5307eef81659c8b4663ae8d37d79a553d638d49f"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11",
@@ -3965,8 +3965,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.34",
-                    "datestamp": "1736282635",
+                    "version": "2.0.35",
+                    "datestamp": "1744777918",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5062,17 +5062,17 @@
         },
         {
             "name": "drupal/sophron",
-            "version": "2.2.0",
+            "version": "2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sophron.git",
-                "reference": "2.2.0"
+                "reference": "2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sophron-2.2.0.zip",
-                "reference": "2.2.0",
-                "shasum": "fa4670e775443db3f465cc25b02c7c82e5c382bf"
+                "url": "https://ftp.drupal.org/files/projects/sophron-2.2.1.zip",
+                "reference": "2.2.1",
+                "shasum": "ac116da7e6eee93594443204a17f0bcb902d7dd2"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11",
@@ -5081,8 +5081,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.0",
-                    "datestamp": "1734432598",
+                    "version": "2.2.1",
+                    "datestamp": "1744800237",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6081,16 +6081,16 @@
         },
         {
             "name": "fileeye/mimemap",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FileEye/MimeMap.git",
-                "reference": "f37ea54dab6f286dd37d937c069b80b601003df0"
+                "reference": "2bfaead48d74e730a4781902d3aaecbeb1f7edc0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/f37ea54dab6f286dd37d937c069b80b601003df0",
-                "reference": "f37ea54dab6f286dd37d937c069b80b601003df0",
+                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/2bfaead48d74e730a4781902d3aaecbeb1f7edc0",
+                "reference": "2bfaead48d74e730a4781902d3aaecbeb1f7edc0",
                 "shasum": ""
             },
             "require": {
@@ -6133,9 +6133,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FileEye/MimeMap/issues",
-                "source": "https://github.com/FileEye/MimeMap/tree/2.2.1"
+                "source": "https://github.com/FileEye/MimeMap/tree/2.2.2"
             },
-            "time": "2024-12-16T19:03:35+00:00"
+            "time": "2025-04-10T18:54:12+00:00"
         },
         {
             "name": "fileeye/pel",
